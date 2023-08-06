@@ -1,0 +1,108 @@
+.heroPage {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.flexContainer {
+	background-color: var(--main-color);
+	display: grid;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+
+.heroImg {
+	grid-area: 1 / 1 / 2 / 3;
+	background-color: var(--main-color);
+	border: 1px solid white;
+}
+
+.heroImg img {
+	display: block;
+	margin: 0 auto;
+	max-width: 70%;
+	height: 100%;
+}
+
+@media (max-width: 600px) {
+	.heroImg img {
+		display: block;
+		margin: 0 auto;
+		max-width: 100%;
+		height: 100%;
+	}
+}
+
+.averageStats {
+	grid-area: 1 / 3 / 2 / 5;
+}
+
+
+.baseStats {
+	grid-area: 2 / 1 / 3 / 5;
+}
+
+table {
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
+}
+
+th, td {
+	padding: 15px;
+	background-color: rgba(255, 255, 255, 0.2);
+	color: #fff;
+}
+
+td {
+	text-align: center;
+}
+
+thead td {
+	border-bottom: 1px solid white;
+}
+
+td:nth-child(odd) {
+	border-right: 1px solid white;
+	width: 50%;
+}
+
+.statsWithLvl {
+	background-color: var(--main-color);
+}
+
+.roles {
+	background-color: var(--main-color);
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.2rem;
+}
+
+.backButton {
+	cursor: pointer;
+	position: fixed;
+	height: 2rem;
+	width: 2rem;
+	background-color: var(--secondary-color);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 5;
+	margin: 5px;
+}
+
+.arrow {
+	border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+	transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}

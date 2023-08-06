@@ -1,0 +1,40 @@
+.slider {
+	margin-top: .5rem;
+	width: 99%;
+	-webkit-appearance: none;
+	appearance: none;
+	cursor: pointer;
+	outline: none;
+	border-radius: 16px;
+}
+
+.slider::-webkit-slider-runnable-track {
+	height: 15px;
+	background: #ccc;
+	border-radius: 16px;
+}
+
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	height: 15px;
+	width: 15px;
+	background-color: var(--secondary-color);
+	border-radius: 15%;
+	border: 2px solid var(--secondary-color);
+	transform: scaleY(1.5);
+}
+
+.lvlValue {
+	display: inline-block;
+	width: 10%;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+	text-align: center;
+}
+
+.withLvlHeader {
+	display: flex;
+	justify-content: center;
+}

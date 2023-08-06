@@ -1,0 +1,36 @@
+.heroPage {
+	font-size: .7rem;
+	display: grid;
+	gap: .3rem;
+}
+
+@media screen and (max-width: 1000px) {
+	.heroPage {
+		grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+	}
+}
+
+@media (max-width:500px) {
+	.heroPage {
+		font-size: .5rem;
+		letter-spacing: 1px;
+		gap: .5em;
+	}
+
+	.heroPage {
+		grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+	}
+}
+
+@media (min-width:501px) {
+	.heroPage {
+		grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+	}
+}
+
+@media (min-width:768px) {
+	.heroPage {
+		grid-template-columns: repeat(auto-fill, minmax(15%, 1fr));
+	}
+
+}
